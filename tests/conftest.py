@@ -6,7 +6,7 @@ from src.vacancy import Vacancy
 
 
 @pytest.fixture
-def vacancies_dict() ->Any:
+def vacancies_dict() -> Any:
     vacs = [
         {
             "name": "Разработчик",
