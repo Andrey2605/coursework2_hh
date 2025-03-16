@@ -24,7 +24,7 @@ def test_cast_to_object_list_empty_list() -> Any:
     assert vacs == []
 
 
-def test_vacancy_str_salary_0()-> Any:
+def test_vacancy_str_salary_0() -> Any:
     vac = Vacancy("Разработчик", "https://hh", "требования", "обязанности")
     assert str(vac) == (
         "Разработчик (Зарплата: не указана).\nТребования: требования.\n"
@@ -32,7 +32,7 @@ def test_vacancy_str_salary_0()-> Any:
     )
 
 
-def test_vacancy_str()-> Any:
+def test_vacancy_str() -> Any:
     vac = Vacancy("Разработчик", "https://hh", "требования", "обязанности", 10000)
     assert str(vac) == (
         "Разработчик (Зарплата: 10000).\nТребования: требования.\n"
@@ -40,7 +40,7 @@ def test_vacancy_str()-> Any:
     )
 
 
-def test_vacancy_eq(vacancies_objects: Any)-> Any:
+def test_vacancy_eq(vacancies_objects: Any) -> Any:
     vac = Vacancy("Разработчик", "https://hh", "требования", "обязанности")
     assert vacancies_objects[0] != vacancies_objects[1]
     assert vacancies_objects[1] == vac

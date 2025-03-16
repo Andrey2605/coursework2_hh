@@ -31,7 +31,7 @@ class HeadHunterAPI(Parser):
         response = requests.get(self.__url, headers=self.__headers, params=self.__params)
         if response.status_code == 200:
             return response
-        return("Ошибка получения данных")
+        return "Ошибка получения данных"
 
     def load_vacancies(self, keyword: Any) -> Any:
         """Получение вакансий по ключевому слову"""
